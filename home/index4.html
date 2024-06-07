@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: bisque;
+            height: 200px;
+            width: 800px;
+            padding: 10px;
+            
+        }
+        .bord{
+            margin: auto;
+            border: 2px solid blue;
+            display: flex;
+        }
+        .tabs {
+            width: 20%;
+            background-color: blue;
+        }
+        .tabs ul {
+            list-style: none;
+            padding: 0;
+            color: white;
+        }
+        .tabs li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .tabs li.active {
+            background-color: lightblue;
+        }
+        .content {
+            width: 80%;
+            padding: 10px;
+        }
+        .content div {
+            display: none;
+        }
+        .content div.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bord">
+            <div class="tabs">
+                <ul>
+                    <li onclick="showTab('html')" class="active">HTML</li>
+                    <li onclick="showTab('css')">CSS</li>
+                    <li onclick="showTab('js')">JS</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="html" class="active">
+                    <h2>HTML Content</h2>
+                    <p>This is the content for the HTML tab.</p>
+                </div>
+                <div id="css">
+                    <h2>CSS Content</h2>
+                    <p>This is the content for the CSS tab.</p>
+                </div>
+                <div id="js">
+                    <h2>JS Content</h2>
+                    <p>This is the content for the JS tab.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="js/main.js">
+       
+    </script>
+</body>
+</html>

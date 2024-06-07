@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .news {
+            border: 1px solid #ccc;
+            
+            padding: 10px;
+            background-color: bisque;
+        }
+        .news h2 {
+            margin-top: 0;
+            display: inline-block;
+        }
+        .delete {
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle; /* выравнивание по вертикали */
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h2>What is Lorem ipsum?</h2>
+            <span class="delete" onclick="deleteNews(this)">X[remove]</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus nam odit dolorum illo dolores natus atque unde fuga ipsum a? Excepturi necessitatibus corporis explicabo. Atque facere, dolore ex ducimus impedit iste accusantium magnam aperiam? Et consequatur id culpa quaerat facilis!</p>
+        
+    </div>
+    <div class="news">
+        <h2>Why do we use it?</h2>
+        <span class="delete" onclick="deleteNews(this)">X[remove]</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim dolor vero dicta inventore voluptas eaque cumque, aliquid debitis corrupti pariatur, non eligendi impedit. Laudantium vero vel esse obcaecati aspernatur aliquam, fugit at nesciunt, officiis cupiditate aut tempora, impedit placeat ex.</p>
+        
+    </div>
+    <div class="news">
+        <h2>Where does it come from?</h2>
+        <span class="delete" onclick="deleteNews(this)">X[remove]</span>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci tenetur, praesentium laborum possimus voluptate provident reprehenderit voluptatum fugiat! Odit cumque aliquid, architecto nostrum earum facere perferendis soluta ad autem fugiat fuga quibusdam aperiam enim, incidunt aliquam inventore molestiae iusto sequi at. Necessitatibus rerum doloremque iure laudantium fugit repellendus earum soluta?</p>
+        
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

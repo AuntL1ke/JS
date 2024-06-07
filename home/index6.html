@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 100px;
+            background-color: bisque;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+        }
+        #progressbar{
+            height: 30px;
+            width: 80%;
+            
+            margin: 10px auto;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        #progressbar>div{
+            background-color: rgb(0, 183, 255);
+            width: 0%;
+            height: 100%;
+
+        }
+        
+        button{
+            margin: 20px 0 0 0 ;
+        }
+        button:hover{
+            background-color: rgb(0, 183, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="progressbar"><div id="progress"></div></div>
+        <button onclick="addPercent()">Add 5 percent</button>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
